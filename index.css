@@ -1,0 +1,390 @@
+/*  
+ /* reset browser default styles */
+/* importing font family - poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+  /* HEADER SECTION */
+  header{
+    background-image: url(joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 60vh;
+    position: relative;
+  }
+  .header-overlay{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top 0;
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+ 
+    width: 100%;
+  }
+
+  .header-content-wrapper{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+
+  }
+/* LOGO */
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color: #f9320a
+}
+
+/* NAVLINKS */
+.nav-link{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;  
+  transition: 0.5s;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.nav-link.active{
+  color:#f9320a;
+}
+
+.hero-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: px;
+
+} 
+.profile-image{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.full-name{
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 10px 10px;
+}
+
+.brief{
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* icons */
+.hero-media-wrapper svg{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 10px;
+  transition: 0.5s;
+
+}
+
+.btn{
+  background-color: #f9320a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 26px;
+  border: none;
+  margin: 10px;
+  letter-spacing: 1px;
+cursor: pointer;
+transition: 0.5s;
+
+}
+
+.btn:hover{
+  opacity: 0.8;
+  background-color: #f9320a;
+}
+
+.download-btn{
+  background-color: #fff;
+  color: #f9320a;
+}
+.download-btn:hover{
+  opacity: 0.8;
+  background-color:  #f9320a;
+  color: #fff;;
+}
+
+/* MAIN BODY CONTENT */
+main{
+   margin-top: 90px;
+}
+
+.section{
+  padding: 40px;
+}
+
+.section h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: #f9320a;
+  margin-bottom: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.about-me{
+  width: 70%;
+  margin: 0 auto;
+}
+.about-brief{
+  text-align: center;
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+/* CURRENTLY WORKING AT */
+.place-of-work-section{
+  margin: 40px 0;
+  background-color: #f9320a;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.place-of-work-section h2{
+  color: #fff;
+}
+.place-of-work-wrapper{
+  text-align: center;
+  margin: 40px 0;
+}
+.place-of-work-pill{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 26px;
+  font-size: 14px;
+  transition: 1.5s;
+
+}
+
+/* PROJECT CARDS */
+.project-card-wrapper{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 2rem;
+}
+
+.project-card{
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.project-card img{
+  width: 500px;
+  height: 200px;
+}
+
+.card-content{
+  width: 300px;
+  padding: 2px 16px;
+ 
+}
+.project-title{
+  color: #f9320a;
+  margin-bottom: 10px;
+  font-size: 18px;
+  width: 600px;
+}
+.project-brief{
+  font-size: 18px;
+  width: 500px;
+}
+.project-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.project-links svg{
+  width: 20px;
+  height: 20px;
+  fill: #f9320a;
+}
+
+.stack-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.stack-progress::-webkit-progress-bar{
+  background-color: #eee;
+  border-radius: 100px;
+  
+}
+.stack-progress::-webkit-progress-value{
+  background-color: #f9320a;
+  border-radius: 100px;
+  
+}
+.stack-progress::-moz-progress-bar{
+  background-color: #eee;
+  border-radius: 100px;
+  
+}
+.stack-progress{
+  color: #f9320a ;
+  border-radius: 100px;
+  
+}
+.stack-progress-wrapper label {
+  display: block;
+}
+
+/* service section */
+.service-section{
+  margin: 40px 0;
+  min-height: 300px;
+  background-color: #f9320a;
+
+}
+.service-section h2{
+  color: #fff ;
+  margin-bottom: 40px;
+}
+.service-card-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.service-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.service-card:hover{
+  box-shadow: 0 8px 16px 0 rgba( 255, 255, 255, 0.4);
+  background-color: #fff;
+}
+.service-card svg{
+  width: 30px;
+  height: 30px;
+  color: #000 ;
+  margin-bottom: 10px;
+}
+
+
+.service-card-content{
+  text-align: center;
+  padding: 2px 16px;
+  width: 300px;
+  font-size: 18px;
+}
+.service-title{
+  color: #f9320a;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+service-brief{
+  font-size: 14px;
+  color: #000;
+
+}
+
+/* WORK WITH ME FORM SECTION */
+.form-section form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+}
+.form-group label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input{
+  border: 1px solid #f9320a;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 10px;
+  font-size: 14px;
+
+}
+.form-group textarea{
+  border: 1px solid #f9320a;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  resize: none;
+  height: 350px;
+  margin-bottom: 1opx;
+}
+/* social media */
+.social-account-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* margin-top: 40px; */
+  margin-bottom: 100px;
+}
+.social-account-wrapper svg{
+  width: 30px;
+  height: 30px;
+  color: #f9320a;
+}
+.social-account-wrapper svg:hover{
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
